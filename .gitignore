@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+warehouse.duckdb
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+airflow/logs/
+airflow/*.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+.DS_Store
