@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_shipments
+    columns:
+      - name: shipment_id
+        tests:
+          - unique
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ["delivered", "in_transit", "cancelled"]
+
+  # Milestone 2: add stg_customers and stg_carriers here with
+  # unique/not_null tests on their keys.
