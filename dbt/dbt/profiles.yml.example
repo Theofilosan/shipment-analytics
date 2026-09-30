@@ -1,7 +1,0 @@
-# Copy this file to ~/.dbt/profiles.yml before running dbt.
-shipment_analytics:
-  target: dev
-  outputs:
-    dev:
-      type: duckdb
-      path: ../warehouse.duckdb
